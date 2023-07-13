@@ -27,13 +27,13 @@ const Nav = () => {
             </span>
             {
                 open && (
-                    <div className="h-screen bg-white font-semibold py-10 ">
+                    <div className="h-full bg-slate-200 font-semibold py-10 ">
                         <ul className="flex gap-5 flex-col cursor-pointer">
-                            <li><Link onClick={() => setOpen(!open)} to="home" spy={true} smooth={true} offset={100} duration={500}>SAIKAT.COM</Link></li>
-                            <li><Link onClick={() => setOpen(!open)} to="home" spy={true} smooth={true} offset={100} duration={500}>Home</Link></li>
-                            <li><Link onClick={() => setOpen(!open)} to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link></li>
-                            <li><Link onClick={() => setOpen(!open)} to="project" spy={true} smooth={true} offset={50} duration={500}>Project</Link></li>
-                            <li><Link onClick={() => setOpen(!open)} to="contact" spy={true} smooth={true} offset={100} duration={500}>Contact</Link></li>
+                            <li><Link onClick={() => setOpen(!open)} to="home" spy={true} smooth={true} offset={-50} duration={500}>SAIKAT.COM</Link></li>
+                            <li><Link onClick={() => setOpen(!open)} to="home" spy={true} smooth={true} offset={-100} duration={500}>Home</Link></li>
+                            <li><Link onClick={() => setOpen(!open)} to="about" spy={true} smooth={true} offset={-300} duration={500}>About</Link></li>
+                            <li><Link onClick={() => setOpen(!open)} to="project" spy={true} smooth={true} offset={-100} duration={500}>Project</Link></li>
+                            <li><Link onClick={() => setOpen(!open)} to="contact" spy={true} smooth={true} offset={-150} duration={500}>Contact</Link></li>
                         </ul>
                     </div>
                 )

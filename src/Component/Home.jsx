@@ -7,7 +7,7 @@ import react from '../assets/react.png'
 import tailwind from '../assets/tailwind.png'
 const Home = () => {
     return (
-        <div className='bg-slate-100 mt-[1px] py-20'>
+        <div className='bg-slate-100 mt-[1px] py-32'>
             <div id='home' className='lg:flex justify-around items-center lg:mb-20'>
 
                 <div className="mb-20 lg:mb-0 space-y-5">
