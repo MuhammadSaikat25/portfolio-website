@@ -27,7 +27,7 @@ const Nav = () => {
             </span>
             {
                 open && (
-                    <div className="h-full bg-slate-200 font-semibold py-10 ">
+                    <div className=" bg-slate-200 font-semibold py-10 ">
                         <ul className="flex gap-5 flex-col cursor-pointer">
                             <li><Link onClick={() => setOpen(!open)} to="home" spy={true} smooth={true} offset={-300} duration={500}>SAIKAT.COM</Link></li>
                             <li><Link onClick={() => setOpen(!open)} to="home" spy={true} smooth={true} offset={-100} duration={500}>Home</Link></li>

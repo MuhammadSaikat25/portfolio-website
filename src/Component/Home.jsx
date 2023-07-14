@@ -10,18 +10,18 @@ const Home = () => {
         <div className='bg-slate-100 mt-[1px] py-32'>
             <div id='home' className='lg:flex justify-around items-center lg:mb-20'>
 
-                <div className="mb-20 lg:mb-0 space-y-5">
-                    <h1 className='font-semibold text-center  text-3xl lg:text-7xl lg:text-left '>Front-End React</h1>
-                    <h1 className='font-semibold text-center  text-3xl lg:text-7xl lg:text-left'>Developer</h1>
-                    <p className='text-2xl text-center lg:text-left'>Hi, I'm Muhammad Saikat. A passionate Front-end React<br />Developer based in Dhaka, Bangladesh. </p>
-                    <div className="flex justify-center lg:flex gap-5">
+                <div className="mb-20 lg:mb-0 space-y-3">
+                    <h1 className='font-semibold text-center  text-2xl lg:text-7xl lg:text-left '>Front-End React</h1>
+                    <h1 className='font-semibold text-center  text-2xl lg:text-7xl lg:text-left'>Developer</h1>
+                    <p className='text-xl text-center lg:text-left'>Hi, I'm Muhammad Saikat. A passionate Front-end React<br />Developer based in Dhaka, Bangladesh. </p>
+                    <div className="flex justify-center py-3 lg:flex gap-5">
                         <span className=''><FaLinkedin size={30}></FaLinkedin></span>
                         <span ><FaGithub size={30}></FaGithub></span>
                     </div>
                 </div>
 
-                <div className="mb-32 lg:mb-0">
-                    <img className='w-[300px] h-[300px] ml-10 lg:ml-0 object-cover rounded-full' src={profileImg} alt="" />
+                <div className="mb-32 lg:mb-0 ml-10">
+                    <img className='w-[300px] h-[300px]  lg:ml-0 object-cover rounded-full' src={profileImg} alt="" />
                 </div>
             </div>
             <div className="mt-30 text-center w-full lg:flex justify-between lg:text-left lg:w-[50%] lg:ml-32">
