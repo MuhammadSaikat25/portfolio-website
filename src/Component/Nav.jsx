@@ -6,7 +6,7 @@ const Nav = () => {
     const [open, setOpen] = useState(false)
     return (
         <>
-            <div className="hidden sticky top-0 bg-white z-10 shadow-md text-gray-800 lg:flex justify-between items-center p-7 font-semibold text-2xl">
+            <nav className="hidden sticky top-0 bg-white z-10 shadow-md text-gray-800 lg:flex justify-between items-center p-7 font-semibold text-2xl">
                 <h1 className="cursor-pointer">Saikat</h1>
                 <ul className="flex gap-10 mr-20 cursor-pointer">
                     <li><Link to="home" spy={true} smooth={true} offset={-300} duration={500}>Home</Link></li>
@@ -14,7 +14,7 @@ const Nav = () => {
                     <li><Link to="project" spy={true} smooth={true} offset={10} duration={500}>Project</Link></li>
                     <li><Link to="contact" spy={true} smooth={true} offset={100} duration={500}>Contact</Link></li>
                 </ul>
-            </div>
+            </nav>
             <span className="fixed top-0 z-50 w-full shadow-md bg-white lg:hidden" onClick={() => setOpen(!open)}>
                 {
                     open ? <FaXmark size={30}></FaXmark>
@@ -27,7 +27,7 @@ const Nav = () => {
             </span>
             {
                 open && (
-                    <div className=" bg-slate-200 font-semibold py-10 ">
+                    <nav className=" bg-slate-200 font-semibold py-10 ">
                         <ul className="flex gap-5 flex-col cursor-pointer">
                             <li><Link onClick={() => setOpen(!open)} to="home" spy={true} smooth={true} offset={-300} duration={500}>SAIKAT.COM</Link></li>
                             <li><Link onClick={() => setOpen(!open)} to="home" spy={true} smooth={true} offset={-100} duration={500}>Home</Link></li>
@@ -35,7 +35,7 @@ const Nav = () => {
                             <li><Link onClick={() => setOpen(!open)} to="project" spy={true} smooth={true} offset={-200} duration={500}>Project</Link></li>
                             <li><Link onClick={() => setOpen(!open)} to="contact" spy={true} smooth={true} offset={-150} duration={500}>Contact</Link></li>
                         </ul>
-                    </div>
+                    </nav>
                 )
             }
         </>

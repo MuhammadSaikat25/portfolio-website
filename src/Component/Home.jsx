@@ -5,9 +5,10 @@ import css from '../assets/css.png'
 import js from '../assets/js.png'
 import react from '../assets/react.png'
 import tailwind from '../assets/tailwind.png'
+
 const Home = () => {
     return (
-        <div className='bg-slate-100 mt-[1px] py-32'>
+        <header className='bg-slate-100 mt-[1px] py-32'>
             <div id='home' className='lg:flex justify-around items-center lg:mb-20'>
 
                 <div className="mb-20 lg:mb-0 space-y-3">
@@ -37,7 +38,7 @@ const Home = () => {
                     <img className='w-[50px] h-[50px] bg-white shadow-md p-2 rounded-full' src={react} alt="" />
                 </div>
             </div>
-        </div>
+        </header>
     );
 };
 
